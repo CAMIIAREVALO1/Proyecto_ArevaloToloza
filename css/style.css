@@ -1,0 +1,823 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "Akira";
+    src: url("../Fonts/Akira\ Expanded\ Demo.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/********************************** HEADER **********************************/
+.navbar{
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.navbar img{
+    height: 50px;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-link{
+    color: white;
+    font-family: "akira";
+    margin-right: 10px;
+}
+.nav-link:hover{
+    color: #FD72AB;
+}
+/********************************** CIERRE HEADER **********************************/
+
+/********************************** INDEX **********************************/
+.main {
+    background-color: #FD72AB;
+}
+
+.section-index {
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-index img {
+    width: 100%;
+    padding: 50px 0 0;
+}
+
+.texto-index {
+    width: 100%;
+    background-color: black;
+    margin: 30px;
+}
+
+.texto-index p {
+    font-family: "montserrat";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 80px 30px;
+}
+
+.section-integrantes {
+    background-color: #FD72AB;
+    width: 100%;
+}
+
+.titulo-integrantes img {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.integrantes-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrantes img {
+    width: 304px;
+    height: 408px;
+}
+
+.integrantes p {
+    font-family: "akira";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+/********************************** CIERRE INDEX **********************************/
+
+/********************************** DISCOGRAFIA **********************************/
+.discografia {
+    width: 100%;
+    background-color: #FD72AB;
+    padding: 0 0 100px;
+}
+
+.discografia .title-container {
+    width: 100%;
+    height: 710px;
+    background-image: url(../IMG/usted-senalemelo-estadio-obras.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.discografia .title-container h1 {
+    font-family: "akira";
+    font-size: 70px;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+/* ALBUM */
+.album {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-album {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 10px;
+}
+
+.titulo-album h4 {
+    font-family: "akira";
+    color: white;
+    font-size: 30px;
+}
+
+.titulo-album .año {
+    font-family: "montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.album-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    padding: 0 100px;
+}
+
+.portada-album {
+    display: flex;
+    flex-direction: column;
+}
+
+.portada-album img {
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.youtube {
+    padding: 10px 0 0;
+}
+
+.youtube a {
+    font-family: "montserrat";
+    font-size: 15px;
+    color: white;
+    text-decoration: underline;
+}
+
+.lista-album {
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 40px;
+    justify-content: space-between;
+}
+
+.lista-album ul li {
+    font-family: "montserrat";
+    color: white;
+    display: list-item;
+    list-style-type: none;
+    padding: 10px;
+}
+
+/*SENCILLOS Y EPS*/
+.section-eps {
+    background-color: black;
+    width: 100%;
+    padding: 0 0 25px;
+}
+
+.title-eps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-eps h2 {
+    margin: 50px;
+    font-family: "akira";
+    font-size: 30px;
+    color: white;
+}
+
+.grilla-eps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 20px 100px;
+}
+
+.lista-eps {
+    justify-self: center;
+    align-self: center;
+}
+
+.lista-eps iframe {
+    height: 355px;
+}
+/*CIERRE SENCILLOS Y EPS*/
+/********************************** CIERRE DISCOGRAFIA **********************************/
+
+/********************************** MULTIMEDIA **********************************/
+/* SECTION FOTOS */
+.fotos-galeria {
+    width: 100%;
+    padding: 100px 0 0 ;
+    background-color: #FD72AB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-fotos h1 {
+    font-family: "akira";
+    font-size: 70px;
+    color: white;
+    padding: 50px 0 0;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 0 100px 0;
+}
+.grilla-fotos{
+    display: grid;
+    width: 80%;
+    grid-template-areas:
+    "ocho ocho ocho ocho ocho tres tres tres"
+    "ocho ocho ocho ocho ocho once once once"
+    "cuatro cuatro cuatro cinco cinco seis seis seis"
+    "siete siete siete siete uno uno uno uno"
+    "nueve nueve nueve nueve dos dos dos dos"
+    "diez diez diez diez dos dos dos dos";
+    gap: 10px;
+}
+.grilla-fotos img{
+    width: 100%;
+}
+.grilla-fotos img:nth-child(1){
+    grid-area: uno;
+}
+.grilla-fotos img:nth-child(2){
+    grid-area: dos;
+}
+.grilla-fotos img:nth-child(3){
+    grid-area: tres;
+}
+.grilla-fotos img:nth-child(4){
+    grid-area: cuatro;
+}
+.grilla-fotos img:nth-child(5){
+    grid-area: cinco;
+}
+.grilla-fotos img:nth-child(6){
+    grid-area: seis;
+}
+.grilla-fotos img:nth-child(7){
+    grid-area: siete;
+}
+.grilla-fotos img:nth-child(8){
+    grid-area: ocho;
+}
+.grilla-fotos img:nth-child(9){
+    grid-area: nueve;
+}
+.grilla-fotos img:nth-child(10){
+    grid-area: diez;
+}
+.grilla-fotos img:nth-child(11){
+    grid-area: once;
+}
+/* CIERRE SECTION FOTOS */
+
+/* SECTION VIDEOS */
+.videos {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-videos {
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    background-color: #000000;
+    padding: 100px 20px 20px 20px;
+}
+.title-videos h1 {
+    font-family: "akira";
+    font-size: 70px;
+    color: white;
+}
+.galeria-videos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.grilla-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 20px 50px;
+    gap: 20px;
+}
+/********************************** CIERRE MULTIMEDIA **********************************/
+
+/********************************** TOUR **********************************/
+.tour {
+    width: 100%;
+}
+
+.imagen-tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour img {
+    padding: 10px 0 0;
+    width: 100%;
+}
+
+.contenedor-acordeon {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.title-tour {
+    background-color: #FD72AB;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.title-tour h1 {
+    font-family: "akira";
+    font-size: 70px;
+    margin: 10px 20px;
+}
+
+.acordeon {
+    display: flex;
+    flex-direction: column;
+}
+
+.acordeon label {
+    font-family: "akira";
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px 40px 50px 40px;
+    transition: all 300ms ease;
+}
+
+.acordeon .contenido-acordeon {
+    margin: 0px 40px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked~.contenido-acordeon {
+    max-height: 2000px;
+    padding: 15px 0px;
+}
+
+.btn-acordeon {
+    display: none;
+}
+
+.show-item {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.show-date {
+    background-color: #FD72AB;
+    font-family: "Akira";
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.show-date-day {
+    padding: 0 10px;
+}
+
+.show-date-year {
+    background-color: white;
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.show-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+.show-info .show-country {
+    font-family: "Akira";
+    font-size: 30px;
+}
+
+.show-info-plus {
+    font-family: "montserrat";
+    font-size: 10px;
+}
+
+.show-button button {
+    background-color: rgb(253, 114, 171);
+    font-family: "akira";
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/********************************* CIERRE TOUR *********************************/
+
+/********************************** CONTACTANOS **********************************/
+.contactanos{
+    height: auto;
+    width: 100%;
+    background-image: url(../IMG/usted-group.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container{
+    padding: 200px 0 100px;
+}
+.form-input-container{
+    padding: 0 50px;
+    background-color: rgba(220, 220, 220, .7);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .7);
+}
+.form-titulo h2{
+    font-family: "akira";
+    font-size: 70px;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+    text-align: center;
+    padding: 30px 0;
+}
+.form-label{
+    font-family: "montserrat";
+    font-size: 15px;
+    font-weight: bold;
+}
+.form-text{
+    font-family: "montserrat";
+    font-size: 15px;
+}
+.btn-contenedor{
+    display: flex;
+    justify-content: center;
+}
+.form-container .btn{
+    background-color: #FD72AB;
+    margin-bottom: 30px;
+    color: white;
+    font-family: "akira";
+    font-size: 20px;
+    padding: 10px;
+}
+.form-control{
+    border: 1px solid #FD72AB;
+}
+.form-check-input:checked{
+    background-color: #FD72AB;
+    border-color: #FD72AB;
+}
+/********************************** CIERRE CONTACTANOS **********************************/
+
+/********************************** FOOTER **********************************/
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0 30px;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 25px;
+}
+
+.nav-list ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+.nav-list ul li a {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+    padding: 10px 20px;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.titulo-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 25px;
+}
+
+.titulo-redes h4 {
+    font-family: "akira";
+    font-size: 15px;
+    color: white;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-redes ul {
+    display: flex;
+}
+
+.iconos-redes ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 20px;
+}
+
+.copyright {
+    width: 100%;
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    font-family: "montserrat";
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+/********************************** CIERRE FOOTER **********************************/
+
+/******************************************************************************************************MOBILE******************************************************************************************************/
+@media (min-width:328px) and (max-width:480px) {
+
+    /************ HEADER ************/
+    .navbar{
+        background-color: #FD72AB;
+    }
+    .navbar img{
+        height: 40px;
+    }
+    .navbar-toggler{
+        height: 40px;
+    }
+    .navbar-toggler-icon{
+        height: 20px;
+    }
+    .nav-link{
+        color: white;
+        font-family: "akira";
+        margin-right: 10px;
+    }
+
+    /************ CIERRE HEADER ************/
+
+    /************ INDEX ************/
+    .imagen-index img{
+        padding: 65px 0 0;
+    }
+    .texto-index {
+        margin: 10px;
+    }
+
+    .texto-index p {
+        font-size: 12px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .titulo-integrantes img {
+        margin-bottom: 20px;
+    }
+
+    .integrantes-contenedor {
+        flex-direction: column;
+    }
+
+    .integrantes img {
+        width: 200px;
+        height: 268px;
+    }
+
+    .integrantes p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    /************ CIERRE INDEX ************/
+
+    /************ DISCOGRAFIA ************/
+    .discografia {
+        padding: 0 0 50px;
+    }
+    .discografia .title-container{
+        height: 625px;
+    }
+    .discografia .title-container h1 {
+        font-size: 30px;
+    }
+
+    .titulo-album {
+        padding: 100px 15px 10px;
+    }
+
+    .album-container {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        padding: 0 15px;
+        justify-items: flex-start;
+    }
+
+    .portada-album img {
+        width: 290px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .lista-album {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0;
+    }
+    .lista-cancion-album ul{
+        padding-left: 0;
+    }
+    /* SENCILLOS Y EPS*/
+    .title-eps h2 {
+        margin: 50px 70px 0;
+        text-align: center;
+    }
+
+    .grilla-eps {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        padding: 20px 15px;
+    }
+
+    .lista-eps iframe {
+        width: 290px;
+    }
+    /************ CIERRE DISCOGRAFIA ************/
+
+    /************ MULTIMEDIA ************/
+    .fotos-galeria{
+        padding: 35px;
+    }
+    .title-fotos h1{
+        font-size: 50px;
+    }
+    .galeria{
+        padding: 20px 0;
+    }
+    .grilla-fotos{
+        width: 100%;
+    }
+    .title-videos h1{
+        font-size: 50px;
+    }
+    .grilla-videos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        padding: 20px 20px 50px;
+        gap: 20px;
+    }
+    /************ CIERRE MULTIMEDIA ************/
+
+    /************ TOUR ************/
+    .tour img{
+        padding: 65px 0 0;
+    }
+    .title-tour {
+        margin-bottom: 0px;
+    }
+
+    .title-tour h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .acordeon label {
+        font-size: 20px;
+        padding: 50px 40px 20px 20px;
+    }
+
+    /************ CIERRE TOUR ************/
+
+    /************ CONTACTO ************/
+    .row{
+        margin: 0;
+    }
+    .form-container{
+        padding: 150px 0 100px;
+    }
+    .form-titulo h2{
+        font-size: 30px;
+    }
+    .form-input-container{
+        padding: 0 10px;
+    }
+    .contactanos{
+        background-size: cover;
+    }
+    /************ CIERRE CONTACTO ************/
+
+    /************ FOOTER ************/
+    .nav-list {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .nav-list ul li {
+        display: list-item;
+        padding: 5px;
+    }
+
+    .nav-list ul li a {
+        font-size: 15px;
+    }
+
+    .titulo-redes h4 {
+        font-size: 12px;
+    }
+
+    .iconos-redes ul li img {
+        height: 35px;
+    }
+
+    .copyright {
+        padding: 0;
+    }
+
+    .copyright p {
+        font-size: 9px;
+    }
+
+    /************ CIERRE FOOTER ************/
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="contacto">
+            <div class="form-contacto">
+                <div>
+                    <h2>CONTACTANOS</h2>
+                </div>
+                <div class="input-contenedor">
+                    <form action="" method="post">
+                        <div class="input">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" placeholder="Escribe tu nombre" name="nombre" id="nommbre" class="controls">
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Escribe tu email" name="email" id="email" class="controls" required>
+                        </div>
+                        <div class="input">
+                            <label for="mensaje">Escribe tu mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="controls" cols="30" rows="10">Escribe tu mensaje</textarea>
+                        </div>
+                        <div class="suscribirse">
+                            <input type="checkbox" name="suscribirse" id="suscribirse" value="suscribirse">
+                            <label for="suscribirse">Quiero suscribirme al newsletter</label>
+                        </div>
+                        <div class="enviar-button">
+                            <button class="buttons" type="submit" value="enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
